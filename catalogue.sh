@@ -14,7 +14,7 @@ cp ${code_dir}/configs/catalogue.service /etc/systemd/system/catalogue.service
 systemctl enable catalogue
 systemctl start catalogue
 
-cp configs/mongodb.repo /etc/yum.repos.d/mongo.repo
+cp ${code_dir}/configs/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 yum install mongodb-org-shell -y
 
