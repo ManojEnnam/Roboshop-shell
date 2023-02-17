@@ -9,7 +9,7 @@ unzip /tmp/catalogue.zip
 cd /app
 npm install
 
-cp ${code_dir}configs/catalogue.service /etc/systemd/system/catalogue.service
+cp ${code_dir}/configs/catalogue.service /etc/systemd/system/catalogue.service
 
 systemctl enable catalogue
 systemctl start catalogue
